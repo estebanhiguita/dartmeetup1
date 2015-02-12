@@ -6,10 +6,17 @@ html, body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
+    background: #eee !important;
 }
+
+
 
 @charset "UTF-8";
 
 [ng\:cloak], [ng-cloak], [data-ng-cloak], .ng-cloak, .ng-hide {
     display: none !important;
+}
+
+select {
+    background-color: #fff;
 }

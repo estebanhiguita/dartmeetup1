@@ -13,21 +13,21 @@
     <meta name="scaffolded-by" content="https://github.com/google/stagehand">
     <title>aaa</title>
 
-    <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/foundation.css" />
+    <link rel="stylesheet" href="styles/main.css">
 </head>
 
 <body ng-app>
     <br>
 
-    <div class="large-3 small-centered columns">
+    <div class="large-4 small-centered columns">
         <select ng-model="nombreSeleccionado" ng-cloak>
             <option ng-cloak ng-repeat="nombre in nombres" ng-value="nombre">
                     {{nombre}}
             </option>
         </select>
-        <div class="row" ng-if="nombreSeleccionado != null || nombreSeleccionado != ''" ng-cloak>
-            <fieldset>
+        <div ng-if="nombreSeleccionado != null || nombreSeleccionado != ''" ng-cloak>
+            <fieldset class="row">
                 <ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-2">
                     <li>
                         <img alt="" ng-src="{{user.imageURL}}">
@@ -35,6 +35,13 @@
                     <li> 
                         <h4>Nombre:</h4>
                         <h5>{{user.nombre}}</h5>
+                    </li>
+                </ul>
+                
+            </fieldset>
+            <fieldset class="row">
+                <ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-2">
+                    <li> 
                         <h4>Presentacion:</h4>
                         <p>{{user.presentacion}}</p>
                     </li>
