@@ -1,0 +1,32 @@
+[
+    {
+        "nombre": "Cristian Garcia",
+        "imageURL": "http://photos4.meetupstatic.com/photos/member/9/a/e/f/highres_243159663.jpeg",
+        "presentacion": "Ingeniero Matemático y Cofundador de ARISTA DEV. Me gusta la computación cientifica, Inteligencia Artificial y Analisis de Datos. Programo en Dart, C#, Matlab, Python, Haskell, Java, JS."
+    },
+    {
+        "nombre": "Alejo Sd",
+        "imageURL": "http://photos2.meetupstatic.com/photos/member/b/4/e/8/highres_240706312.jpeg",
+        "presentacion": "Googler, Entrepreneurship, Software Engineering Organizer gdgquindio #GoogleDeveloperGrou­p"
+    },
+    {
+        "nombre": "David Camilo Perdomo",
+        "imageURL": "http://photos3.meetupstatic.com/photos/member/5/1/a/0/highres_243680896.jpeg",
+        "presentacion": "Aún no hay presentación"
+    },
+    {
+        "nombre": "Juliana",
+        "imageURL": "http://photos2.meetupstatic.com/photos/member/9/c/0/9/highres_243699945.jpeg",
+        "presentacion": "Aún no hay presentación"
+    },
+    {
+        "nombre": "Juan Castillo",
+        "imageURL": "http://photos3.meetupstatic.com/photos/member/8/3/f/6/member_188253782.jpeg",
+        "presentacion": "Aún no hay presentación"
+    },
+    {
+        "nombre": "Esteban Higuita",
+        "imageURL": "http://photos1.meetupstatic.com/photos/member/8/a/b/0/highres_243275504.jpeg",
+        "presentacion": "Aún no hay presentación"
+    }
+]
