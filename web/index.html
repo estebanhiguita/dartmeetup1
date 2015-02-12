@@ -14,20 +14,33 @@
     <title>aaa</title>
 
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/foundation.css" />
 </head>
 
 <body ng-app>
+    <br>
 
-    <select ng-model="nombreSeleccionado" ng-cloak>
-        <option ng-cloak ng-repeat="nombre in nombres" ng-value="nombre">
-                {{nombre}}
-        </option>
-    </select>
-   
-    <div ng-if="nombreSeleccionado != null || nombreSeleccionado != ''" ng-cloak>
-        <img alt="" ng-src="{{user.imageURL}}">
-        Nombre: {{user.nombre}}
-        Presentacion: {{user.presentacion}}
+    <div class="large-3 small-centered columns">
+        <select ng-model="nombreSeleccionado" ng-cloak>
+            <option ng-cloak ng-repeat="nombre in nombres" ng-value="nombre">
+                    {{nombre}}
+            </option>
+        </select>
+        <div class="row" ng-if="nombreSeleccionado != null || nombreSeleccionado != ''" ng-cloak>
+            <fieldset>
+                <ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-2">
+                    <li>
+                        <img alt="" ng-src="{{user.imageURL}}">
+                    </li>
+                    <li> 
+                        <h4>Nombre:</h4>
+                        <h5>{{user.nombre}}</h5>
+                        <h4>Presentacion:</h4>
+                        <p>{{user.presentacion}}</p>
+                    </li>
+                </ul>
+            </fieldset>
+        </div>
     </div>
 
 <script type="application/dart" src="main.dart"></script>
