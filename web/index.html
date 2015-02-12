@@ -16,10 +16,10 @@
     <link rel="stylesheet" href="styles/main.css">
 </head>
 
-<body>
+<body ng-app ng-cloak>
 
     <select ng-model="nombreSeleccionado">
-        <option ng-repeat="nombre in nombres" ng-value="nombre">
+        <option ng-cloak ng-repeat="nombre in nombres" ng-value="nombre">
                 {{nombre}}
         </option>
     </select>
@@ -27,7 +27,7 @@
     <button ng-if="nombres.length > 0" ng-click="seleccionarUsuario ()">Seleccionar</button>
    
    
-    <div ng-if="nombreSeleccionado != null || nombreSeleccionado != ''">
+    <div ng-if="nombreSeleccionado != null || nombreSeleccionado != ''" ng-cloak>
         <img alt="" ng-src="{{user.imageURL}}">
         Nombre: {{user.nombre}}
         Presentacion: {{user.presentacion}}
